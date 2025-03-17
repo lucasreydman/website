@@ -28,7 +28,7 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li>
-                    <button class="theme-toggle" aria-label="Toggle theme">
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
                         <i class="fas fa-sun"></i>
                         <i class="fas fa-moon"></i>
                     </button>
@@ -316,7 +316,7 @@
 
     <script>
         // Theme toggle functionality
-        const themeToggle = document.querySelector('.theme-toggle');
+        const themeToggle = document.getElementById('theme-toggle');
         
         function toggleTheme() {
             document.documentElement.setAttribute('data-theme', 
